@@ -1,0 +1,10 @@
+(defun num-guess
+  (setf random-num (random 100))
+  (let (guess 101))
+  (do (i 0 (1+ i))
+      ((= i random-num) "You guessed it correct")
+(format t "Enter a number: ")
+(setq guess (read))
+(format t "You entered: ~a~%" guess)
+    )
+  )
