@@ -1,0 +1,7 @@
+(defun is-prime n
+  (dotimes (i (/ n 2))
+    (if (!= (mod n i) 0))
+    (return nil)
+    )
+  (return t))
+
