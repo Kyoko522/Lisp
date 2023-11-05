@@ -1,0 +1,4 @@
+(defun one (n)
+  (let ((sum 0))
+    (dotimes (i x sum)
+      (setf sum (+ sum 1)))))
