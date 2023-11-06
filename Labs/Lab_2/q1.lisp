@@ -1,7 +1,11 @@
-(defun grade (x)
-  (cond
-    ((>= x 80) "A")
-    ((>= x 70) "B")
-    ((>= x 60) "C")
-    ((>= x 50) "D")
-    (t "F")))
+
+(defun grade (p)
+  (cond ((>= p 90) "A+")
+        ((>= p 85) "A")
+        ((>= p 80) "A-")
+        ((>= p 77) "B+")
+        ((>= p 73) "B")
+        ((>= p 70) "B-")
+        ((>= p 0) "F")
+        ((null p) "FNA")
+        (t "Invalid percentage")))
