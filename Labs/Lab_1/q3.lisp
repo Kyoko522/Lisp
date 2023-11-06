@@ -1,23 +1,34 @@
-(defvar max_A 0)
-(defvar max_B 0)
-(defvar free_A 0)
-(defvar free_B 0)
+(defvar maxA 0)
+(defvar maxB 0)
+(defvar inA 0)
+(defvar inB 0)
 
 (defun max-capacity (b n)
-  (if (= b 1)
-      (prog
-        (setf max_A n)
-        (setf free_A n))
-      (prog
-        (setf max_B n)
-        (setf free_B n))))
+  (cond
+    ((= b 1) (setf inA 0) (setf maxA n))
+    ((= b 2) (setf inB 0) (setf maxB n)))
+  n)
 
 (defun enter-garage (b)
-  (if (= b 1)
-      (setf free_A (max 0 (- free_A 1)))
-      (setf free_B (max 0 (- free_B 1))))
+  (cond
+    ((= b 1)
+     (when (< inA maxA)
+       (incf inA))
+     (- maxA inA))
+    ((= b 2)
+     (when (< inB maxB)
+       (incf inB))
+     (- maxB inB))))
 
 (defun exit-garage (b)
-  (if (= b 1)
-      (setf free_A (+ free_A 1))
-      (setf free_B (+ free_B 1)))
+  (cond
+    ((= b 1)
+     (when (> inA 0)
+       (decf inA))
+     (- maxA inA))
+    ((= b 2)
+     (when (> inB 0)
+       (decf inB))
+     (- maxB inB))))
+
+
