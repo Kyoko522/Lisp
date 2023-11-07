@@ -1,0 +1,12 @@
+(defstruct record name score)
+
+(defun sort-student-records (lst comp)
+  (if (null lst)
+      '()
+      (let* ((pivot (car lst))
+             (rest (cdr lst))
+             (smaller (remove-if-not (lambda (x) (funcall comp x pivot)) rest))
+             (greater (remove-if (lambda (x) (funcall comp x pivot)) rest))
+             (sorted-smaller (sort-student-records smaller comp))
+             (sorted-greater (sort-student-records greater comp)))
+        (append sorted-smaller (list pivot) sorted-greater))))

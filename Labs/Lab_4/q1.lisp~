@@ -1,0 +1,27 @@
+(defstruct record
+  name
+  score)
+
+(defun sort-student-records (records compare-fn)
+  (if (null records)
+      records
+      (let* ((pivot (car records))
+             (rest (cdr records))
+             (smaller (remove-if (lambda (x) (funcall compare-fn x pivot)) rest))
+             (greater (remove-if-not (lambda (x) (funcall compare-fn x pivot)) rest)))
+        (append (sort-student-records smaller compare-fn)
+                (list pivot)
+                (sort-student-records greater compare-fn)))))
+
+(defvar student-records
+  (list (make-record :name "Alice" :score 95)
+        (make-record :name "Bob" :score 82)
+        (make-record :name "Charlie" :score 95)
+        (make-record :name "David" :score 78)))
+
+(defvar sorted-records
+  (sort-student-records student-records
+                        #'(lambda (x y) (> (record-score x) (record-score y))))
+
+(dolist (record sorted-records)
+  (format t "Name: ~a, Score: ~a~%" (record-name record) (record-score record)))

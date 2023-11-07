@@ -1,10 +1,13 @@
-(defun is-prime (n)
-  (if (<= n 1)
-      nil
-      (let ((prime t))
-        (dotimes (i (/ n 2) prime)
-          (if (zerop (mod n (1+ i)))
-              (setq prime nil)))))
-  t)
-
-
+(defun is-prime (x)
+  (let ((sqed (ceiling (sqrt x)))
+        (is-prime t))
+    (when (or (= x 0) (= x 1))
+      (setq is-prime nil))
+    
+    (dotimes (i sqed is-prime)
+      (unless (or (= i 0) (= i 1))
+        (when (= (mod x (+ i 1)) 0)
+          (setq is-prime nil)))
+      )
+    (if (equal is-prime nil)
+        "Is not a Prime Number" "Is a Prime Number")))
