@@ -1,0 +1,11 @@
+(defstruct person
+  name age)
+
+(defun filter-ages (array threshold)
+(let ((filter-array (make-array 0 :adjustable t :fill-pointer t)))
+
+  (dotimes (i (length array) filtered-array)
+    (when (> (person-age (aref array i)) threshold)
+      (vector-push-extend (person-name (aref array i) filter-array))
+     ))
+  ))
