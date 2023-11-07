@@ -1,0 +1,10 @@
+(defun find-smallest list &optional (smallest nil)
+
+  (if (= (length list) 0)
+      (return smallest)
+      (let ((temp (car list)))
+        (if (integerp temp)
+            (if (or (eq smallest nil) (> smallest temp))
+                (setf smallest temp))))
+      (find-smallest ((cdr list) smallest)))
+  )
