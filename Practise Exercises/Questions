@@ -4,6 +4,6 @@ Question 3 -> Write a recursive function to calculate the factorial of a number
 Question 4 -> Write a program to print the first n terms of the Fibonacci sequence using recursion
 Question 5 -> Write a program that prompts the user to guess a randomly generated number and provides feedback
 Quedtion 6 -> Find the smalled integer in list, skip non-integers, nil if not a list and also use recursion
-Question 7 -> Binary Search, create a tail-recursive function taht perfoms a binary search on a sorted list of integers
+Question 7 -> Binary Search, create a tail-recursive function that performs a binary search on a sorted list of integers
 Question 8 -> Reverse a list, write a tail-recursive function to reverse a list
 Question 9 ->
