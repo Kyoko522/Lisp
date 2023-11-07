@@ -1,0 +1,5 @@
+(defun factorial (x &optional (result 1))
+  (when (= x 1)
+    result)
+  (factorial (- n 1) (* n result))
+  )
