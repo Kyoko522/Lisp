@@ -1,7 +1,7 @@
 Question 1 -> Calculate the sum of all the integers from 1 to n using a loop
 Question 2 -> Write a function to check if a number is prime 
 Question 3 -> Write a recursive function to calculate the factorial of a number 
-Question 4 -> Write a program that prompts the user to guess a randomly generated number and provides feedback
-Question 5 -> Write a program to print the first n terms of the Fibonacci sequence using recursion
+Question 4 -> Write a program to print the first n terms of the Fibonacci sequence using recursion
+Question 5 -> Write a program that prompts the user to guess a randomly generated number and provides feedback
 Quedtion 6 -> Find the smalled integer in list, skip non-integers, retirn most-positive-fixnum if list ocntains no integer, nil if not a list 
 

@@ -1,0 +1,13 @@
+(defun guss-my-number (x)
+  (let ((number (random 100))
+        (guess -1))
+    
+   (while (= guess number)
+          (print "Enter a Number: ")
+          (setf guess (read))
+          (cond
+            ((< guess number) (print "Higher"))
+            ((> guess number) (print "Lower"))
+            ((= guess number) (print "You guess the correct number"))))
+
+    ) )
