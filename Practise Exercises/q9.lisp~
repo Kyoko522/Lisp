@@ -1,0 +1,4 @@
+(defun count-element (list)
+    (if (= (length list) 0)
+        (return)
+        (+ 1 (count-element (cdr list)))))

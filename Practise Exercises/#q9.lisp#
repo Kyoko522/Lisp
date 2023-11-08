@@ -1,0 +1,11 @@
+(defun string-permutations (input)
+  (if (<= (length input) 1)
+      (list input) ; Base case
+      (let ((permutations '()))
+        (dotimes (i (length input) permutations)
+          (let* ((char (char input i))
+                 (remaining (concatenate 'string (subseq input 0 i) (subseq input (+ i 1)))))
+                 (sub-permutations (string-permutations remaining)))
+            (dolist (perm sub-permutations)
+              (push (concatenate 'string (string char) perm) permutations)))))))
+=
