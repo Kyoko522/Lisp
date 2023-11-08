@@ -1,0 +1,10 @@
+(defun next-state (list state)
+  (dolist (i list)
+    (when (equal state (car i))
+      (return (cdr i)))))
+
+(defun jump-state (list state1 state2)
+  (if (equal state1 (next-state list state2))
+      (next-state list state1)
+      (next-state list state2)))
+
