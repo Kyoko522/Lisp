@@ -9,9 +9,9 @@ Quedtion 6 -> Find the smalled integer in list, skip non-integers, nil if not a 
 Question 7* -> Binary Search, create a tail-recursive function that performs a binary search on a sorted list of integers
 Question 8 -> Reverse a list, write a tail-recursive function to reverse a list
 Question 9 -> Count the elements in a list, write a recursive function that takes in a list as input and returns the count of the elements in the list
-
 Question 10 -> Check for Balanced Parentheses, create a recursive function that checks if a string parentheses are balanced. Your Function should return T if the input string has balanced parentheses and NIL if it does not.
+Question 11 -> Implement a Lisp function that takes a list of words (strings) as input and returns a list of unique words from the input list. Ensure that your solution efficiently handles duplicate words and maintains the order of the original list.
 
 Medium:
-Question 11 -> Implement a Lisp function that calculates the determinant of a square matrix using recursion. The determinant of a 2x2 matrix [a b] [c d] is given by the formula ad - bc. For larger matrices, you can use the expansion by minors approach. Avoid using built-in matrix functions or loops in your solution.
+Question 12 -> Implement a Lisp function that calculates the determinant of a square matrix using recursion. The determinant of a 2x2 matrix [a b] [c d] is given by the formula ad - bc. For larger matrices, you can use the expansion by minors approach. Avoid using built-in matrix functions or loops in your solution.
 Questopm 12 ->
