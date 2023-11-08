@@ -9,6 +9,7 @@ Quedtion 6 -> Find the smalled integer in list, skip non-integers, nil if not a 
 Question 7* -> Binary Search, create a tail-recursive function that performs a binary search on a sorted list of integers
 Question 8 -> Reverse a list, write a tail-recursive function to reverse a list
 Question 9 -> Count the elements in a list, write a recursive function that takes in a list as input and returns the count of the elements in the list
-Question 10 ->
+
+Question 10 -> Check for Balanced Parentheses, create a recursive function that checks if a string parentheses are balanced. Your Function should return T if the input string has balanced parentheses and NIL if it does not.
 Question 11 ->
 Questopm 12 ->
