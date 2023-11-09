@@ -7,7 +7,7 @@
   (cond
     ((null (next-state list s)) x)
     ((equal (next-state list x) s) (next-state list s))
-    ((member (next-state list x) s) (next-state list s))
+    ((find (next-state list x) s) (next-state list s))
     (t x)
     ))
 

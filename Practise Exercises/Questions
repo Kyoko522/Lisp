@@ -14,4 +14,9 @@ Question 11 -> Implement a Lisp function that takes a list of words (strings) as
 
 Medium:
 Question 12 -> Implement a Lisp function that calculates the determinant of a square matrix using recursion. The determinant of a 2x2 matrix [a b] [c d] is given by the formula ad - bc. For larger matrices, you can use the expansion by minors approach. Avoid using built-in matrix functions or loops in your solution.
-Questopm 12 ->
+Question 13 -> Write a function MERGE-SORTED-LISTS that takes two sorted lists and a comparator and returns the result of merging the two sorted list
+Question 14 ->	Write a tail-recursive function SUM-DEEP-LIST that calculates and returns the sum of all numberic elements in a deeply nested list. The functions assumes all the elements are either lists or integer.
+Question 15 -> Modify your tail-recursive function in the above question so that it will work with a list of mixed types. Call the function SUM-DEEP-LIST-INT. it will return the sum of all integers in the given list. Make sure to modify all your recursive calls to the new function name, and ensure that your solution is tail recursive.
+Question 16 -> Write a function FLATTEN-LIST that takes a nested list as an input and returns as a flattened list. The nested list may contain sublist at various depths. The result should be a single-level list containing all the elements in the order they were encountered in the orginal list
+Question 17 -> Write a function IS-PALINDROME? that determines wheather a given list is a palindrome (is the same forwards and backwards)
+Question 18 -> 
