@@ -10,4 +10,3 @@
                                               nil))
         ((equal state1 (next-state list state2)) (next-state list state1))
         (t (next-state list state1))))
-
