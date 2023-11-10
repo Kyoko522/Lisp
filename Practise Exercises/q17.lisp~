@@ -1,0 +1,12 @@
+(defun is-palindrome? (list)
+  (let ((opposite (reverse list)))
+    (cond
+      ((and (null list) (null opposite)) t)
+      ((equal (car list) (car opposite)) t)
+      (t nil))
+
+    )
+
+
+
+  )
