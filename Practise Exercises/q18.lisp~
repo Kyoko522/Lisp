@@ -1,0 +1,9 @@
+(defstruct book
+  title author genre pages)
+
+(defun max-books-pages (array &optional max)
+(cond
+  ((null array) max)
+  ((>= (book-pages (car array)) (book-pages max)) (max-books-pages (cdr array) (car array)))
+  (t (max-books-pages (cdr array) max)))
+  )
