@@ -1,0 +1,6 @@
+(defun sum-deep-list (list &optional sum)
+  (cons
+   ((null list) sum)
+   ((listp (car list)) (+ (sum-deep-list (cdr list) + sum-deep-list (car list))))
+   (t (setf sum (+ car list) sum))
+   ))
