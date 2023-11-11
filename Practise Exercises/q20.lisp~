@@ -1,0 +1,10 @@
+(defun student
+  year grades)
+
+(defun count-above (x year threshold &optional (count 0))
+  (cond
+    ((not(= (student-year x) year)) 0)
+    (t (dolist (i (student-grades x))
+         (when (<= threshold i)
+           (incf count))))
+    ))
