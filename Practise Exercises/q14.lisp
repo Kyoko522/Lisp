@@ -1,6 +1,6 @@
-(defun sum-deep-list (list &optional (sum 0))
+(defun sum-deep-list-int (list &optional (sum 0))
   (cond
-   ((null list) sum)
-   ((listp (car list)) (sum-deep-list (car list)  (sum-deep-list (cdr list) sum))) 
-   (t (sum-deep-list (cdr list) (+ sum (car list))))))
-
+    ((null list) sum)
+    ((integerp (car list)) (sum-deep-list-int (cdr list) (+ sum (car list))))
+    ((listp (car list)) (sum-deep-list-int (cdr list) (sum-deep-list-int (car list) sum)))
+    (t (sum-deep-list-int (cdr list) sum))))

@@ -1,0 +1,18 @@
+(defstruct person
+  first mother father sibling)
+
+(defun redact-names-copy (people name) (l)
+  (let ((c '())
+        (newp nil))
+    (dolist (p people c)
+      (setf newp (make-person))
+      (setf (person-first newp) (person-first p))
+      (setf (person-mother newp) (person-mother p))
+      (setf (person-father newp) (person-father p))
+      (setf (person-sibling newp) (person-sibling p))
+      (if (string= (person-first newp) name) (setf (person-first newp) "___"))
+      (if (string= (person-mother newp) name) (setf (person-mother newp) "___"))
+      (if (string= (person-father newp) name) (setf (person-father newp) "___"))
+      (if (string= (person-sibling newp) name) (setf (person-sibling newp) "___"))
+      (setf c (cons newp c))
+      )))
