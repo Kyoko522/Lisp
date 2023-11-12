@@ -1,0 +1,7 @@
+In Python/Java, we called them objects. Like a new data type that contains attributes (not concerned with methods) that we can change and access
+
+(defstruct structureName attr1 attr2 ...)
+
+Define it with all the arrributes you want your structure to have. Types are not defined, so you can assin anything to the atrtributes
+
+List creates the constructor for you which is super convenient, and the accessors are also prettyr straightforward

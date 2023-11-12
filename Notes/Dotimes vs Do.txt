@@ -1,0 +1,5 @@
+Dotimes acts like a for loop: we iterate a certain number of times. Iterating is easy, but we only have one iterating variable and no flexibility. Use dotimes when we know how many times to perform a set of operations.
+
+Do acts a while loop: we loop based on a condition. we can define multiple variables, their starting values, and an optional increment step to change their values. Use do when we need to repeat a set of operations until a certain state in achieved.
+
+

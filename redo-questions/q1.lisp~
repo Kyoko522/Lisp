@@ -1,0 +1,6 @@
+(defun interleave (x y &optional (result nil))
+  (cond
+    ((and (null x) (null y)) (nreverse result))
+    ((null x) (interleave x (cdr y) (cons (car y) result)))
+    ((null y) (interleave (cdr x) y (cons (car x) result)))
+    (t (interleave))))
